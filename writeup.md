@@ -189,7 +189,7 @@ int hash(const char* function_name) {
 Written a code to travers Kernal32.dll and hash every functions and save it in a file.
 ## Assembly version for hash function
 
-```
+```asm
 _hash:
 	xor r9, r9
 	xor r8, r8
@@ -295,7 +295,7 @@ call _get_address
 
 ## Call the functions
 
-```
+```asm
 _main:
 	; save getProcAdd
 	mov r15, QWORD[rsp+8]
